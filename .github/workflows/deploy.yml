@@ -17,6 +17,7 @@ jobs:
           npm i -g pnpm
           pnpm install --no-frozen-lockfile
           pnpm run build:github
+          touch ./out/.nojekyll
 
       - name: Deploy to github-pages🚀 # 部署到github.io
         uses: JamesIves/github-pages-deploy-action@v4.3.3
